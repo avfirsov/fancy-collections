@@ -1,17 +1,38 @@
 {
-  "name": "ts-collections-toolkit",
+  "name": "fancy-collections",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A small collection of perfectly typed handy tools for everyday work with collections",
+  "publishConfig": {
+    "access": "public"
   },
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npx rimraf dist && tsc -p ./tsconfig.build.json",
+    "typing-tests": "tsc -p tsconfig.tests.json",
+    "tests": "jest"
+  },
+  "author": "avfirsov",
+  "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/lodash.get": "^4.4.9",
+    "@types/lodash.set": "^4.3.9",
+    "jest": "^29.7.0",
     "prettier": "^3.1.0",
     "prettier-config-standard": "^7.0.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "ts-toolbelt": "^9.6.0",
     "type-fest": "^4.8.3",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2"
   }
 }
