@@ -3,7 +3,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
-`fancy-collections`is a carefully selected subset of the most useful `lodash` helpers, each enhanced with extremely strict typing and a significantly improved, user-friendly API. Forget about type casting and welcome full code reusability, even when performing complex operations on collections. If you love working with collections in a functional way, you'd probably love it.
+`fancy-collections` is a small library easing most common operations on collections. 100% type safe. Extremely user-friendly API
 
 Key Features:
 - **No More Type Casting**: Complex collection operations no longer require tedious and error-prone type casts. `fancy-collections` maintains type integrity throughout, making your code cleaner and safer.
