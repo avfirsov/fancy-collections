@@ -16,9 +16,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Run functionality tests
+        run: npm run test:functionality
 
-      - name: Success Message
+      - name: Functionality tests passed
         if: success()
-        run: echo "Tests passed successfully!"
+        run: echo "Functionality tests passed!"
+
+      - name: Run typing tests
+        run: npm run test:typing
+
+      - name: Typing tests passed
+        if: success()
+        run: echo "Typing tests passed!"

@@ -13,8 +13,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "npx rimraf dist && tsc -p ./tsconfig.build.json",
-    "typing-tests": "tsc -p tsconfig.tests.json",
-    "tests": "jest"
+    "tests:typing": "tsc -p tsconfig.tests.json",
+    "tests:functionality": "jest"
   },
   "author": "avfirsov",
   "license": "MIT",
