@@ -17,14 +17,14 @@ jobs:
         run: npm install
 
       - name: Run functionality tests
-        run: npm run test:functionality
+        run: npm run tests:functionality
 
       - name: Functionality tests passed
         if: success()
         run: echo "Functionality tests passed!"
 
       - name: Run typing tests
-        run: npm run test:typing
+        run: npm run tests:typing
 
       - name: Typing tests passed
         if: success()
