@@ -1,6 +1,6 @@
 {
   "name": "fancy-collections",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small collection of perfectly typed handy tools for everyday work with collections",
   "publishConfig": {
     "access": "public"
@@ -13,8 +13,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "npx rimraf dist && tsc -p ./tsconfig.build.json",
-    "typing-tests": "tsc -p tsconfig.tests.json",
-    "tests": "jest"
+    "tests:typing": "tsc -p tsconfig.tests.json",
+    "tests:functionality": "jest"
   },
   "author": "avfirsov",
   "license": "MIT",
