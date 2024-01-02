@@ -1,8 +1,8 @@
-name: Node.js CI
+name: Publish new version on npm
 
 on:
   push:
-    tags: -'v*'
+    branches: [main]
 
 jobs:
   test:
