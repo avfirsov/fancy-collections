@@ -1,6 +1,7 @@
 # fancy-collections [🌟✨⭐]
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![codecov](https://codecov.io/gh/avfirsov/fancy-collections/graph/badge.svg?token=CR7Y17309G)](https://codecov.io/gh/avfirsov/fancy-collections)
 
 `fancy-collections` is a small library easing most common operations on collections. 100% type safe. Extremely user-friendly API
 
